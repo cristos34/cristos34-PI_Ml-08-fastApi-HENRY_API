@@ -28,10 +28,10 @@
 
 <hr>
 
-Este trabajo esta basado en realizar un proceso de extarcion transformacion y carga (ETL) con diversos dataset, con la fin de entregar datos estandarizados y de buena calidad (limpios) que puedan ser procesados por nuestra Application Programming Interface (API), la cual va estar trabajando desde un modo de producion desde desde un servidor llamado render.
+Este trabajo esta basado en realizar un proceso de extracción transformación y carga (ETL) con diversos dataset, con la fin de entregar datos estandarizados y de buena calidad (limpios) que puedan ser procesados por nuestra Application Programming Interface (API), la cual va estar trabajando desde un modo de producción desde un servidor llamado Render.
 
 API, Una API o interfaz de programación de aplicaciones, con un protocolo que se usa para diseñar e integrar el software de las aplicaciones.
-Es una herramienta muy versátil y fundamental para la creación de app web,sitios estaticos entre otras formas de uso, esta permite realizar una sin numero de operaciones y vincular con una plataforma web.
+Es una herramienta muy versátil y fundamental para la creación de app web, sitios estáticos entre otras formas de uso, esta permite realizar una sinnúmero de operaciones para vincular con una plataforma Web.
 
 Hoy en día contamos con **FastAPI** y **Flask** entre muchas otras, son framework modernos y de alto rendimiento para construir APIs con Python.
 <p align=center>
@@ -41,7 +41,7 @@ Hoy en día contamos con **FastAPI** y **Flask** entre muchas otras, son framewo
 
 ## **Tecnologías**
 
-Para la elboración de este proyecto se utilizaron las siguiente tecnologias:
+Para la elboración de este proyecto se utilizaron las siguiente tecnologías:
 
 * Fastapi
 * Visual studio code
@@ -52,7 +52,7 @@ Para la elboración de este proyecto se utilizaron las siguiente tecnologias:
 * Render
 <hr>
 
-## **Pasos para la elaboracion del proyecto**
+## **Pasos para la elaboración del proyecto**
 
 
 <p align=center>
@@ -60,7 +60,7 @@ Para la elboración de este proyecto se utilizaron las siguiente tecnologias:
 
 **1.** **EDA** 
 
-Se realiza un analisis exploratorio con el objetivo de verificar el estado los datos de entrada logardo detallar que esten cargados correctamente, lo cual permite poder tomar decisiones en la limpieza de estos, los archivos orginales fueron provistos como *csv*, estos se cargaron de la siguiente manera:
+Se realiza un analisis exploratorio con el objetivo de verificar el estado los datos de entrada, para lograr detallar que están cargados correctamente, lo cual permite poder tomar decisiones en la limpieza de estos; los archivos orginales fueron suministrados en formato *csv*, estos se cargaron de la siguiente manera:
 
 Para visualizar la limpieza completa se pueden remitir a [Limpieza y extacion](https://github.com/cristos34/cristos34-PI_Ml-fastApi-HENRY_API/blob/37c7c0c8b08fd7c52ff687ea97fd46c417a0991f/Proyecto_PI_Uno.ipynb).
 
@@ -68,11 +68,18 @@ Para visualizar la limpieza completa se pueden remitir a [Limpieza y extacion](h
 
 **2.** **Creación de la API**
 
-Para crear la API se utilizo el framework [FasAPI](https://fastapi.tiangolo.com/), que esta catalogado en el momento como el frameworkde mas alto procesamineto y de mayor facilidad de uso para trabajar API.
+Para crear la API se utilizó el framework [FasAPI](https://fastapi.tiangolo.com/), que está catalogado en el momento como el frameworkde más alto procesamiento y de mayor facilidad de uso.
+            
+La API llamanda **platafomas-streaming** permite conocer diferentes datos de las platafromas Amazon, Hulu, Diney, Netflix, está se trabajó en un archivo llamado **main.py** y se inició de la siguiente manera:
 
-La API llamanda **platafomas-streaming** permite conocer diferentes datos de las platafromas Amazon, Hulu, Diney, Netflix, esta se trabajo en un archivo llamado **main.py** y se inicializó de la siguiente manera:
+Para ver el código completo donde están todas las funciones que de la API se pueden remitir a [main.py](https://github.com/cristos34/cristos34-PI_Ml-fastApi-HENRY_API/blob/37c7c0c8b08fd7c52ff687ea97fd46c417a0991f/main.py).
+            
+Tambien se una API con el framework [Flask]([https://fastapi.tiangolo.com/](https://flask.palletsprojects.com/en/2.2.x/)), que está catalogado tambien como un framework con mucha facilidad para trabajar pandas y muchas otras bases de datos, ademas que resta mauchos de los servicios que presta FastApi.
+            
+La API, llamada  **mainFlask** permite conocer diferentes datos de las plataformas  Amazon, Hulu, Disney, Netflix, esta se trabajó en un archivo llamado **mainFlask.py** y pero no se le pudo hacer el deploying debido a que no se encontró información que sirviera de guía y que funcionaran sus pasos.
 
-Para ver el codigo completo donde estan todas las funciones que de la API se pueden remitir a [main.py](https://github.com/cristos34/cristos34-PI_Ml-fastApi-HENRY_API/blob/37c7c0c8b08fd7c52ff687ea97fd46c417a0991f/main.py).
+Para ver el código completo donde están todas las funciones de esta API se pueden remitir a [main.py](https:///main.py).
+
 
 
 app=FastAPI(title="Api de consultas en Plataformas striming",
@@ -90,18 +97,15 @@ app=FastAPI(title="Api de consultas en Plataformas striming",
 
 **2.1** **Ejecutar la API**
 
-Para ejecutar la API se tienen que ingresar alsiguente link que se coneceta conel servidor (https://github.com/cristos34/cristos34-PI_Ml-fastApi-HENRY_API/blob/37c7c0c8b08fd7c52ff687ea97fd46c417a0991f/main.py)
-
-
-
+Para ejecutar la API se tienen que ingresar al siguiente link que se coneceta con el servidor (https://github.com/cristos34/cristos34-PI_Ml-fastApi-HENRY_API/blob/37c7c0c8b08fd7c52ff687ea97fd46c417a0991f/main.py)
 
 
 ```
-Una vez encendido ingresados al link ya podemos utilizar nuestra consultas en la API, como son:
+Una vez encendido ingresados al link ya podemos utilizar nuestras consultas en la API, como son:
 
 * Película con mayor duración con filtros opcionales de AÑO, PLATAFORMA Y TIPO DE DURACIÓN. (la función debe llamarse get_max_duration(year, platform, duration_type))
 
-* Se realiza la verificacion los valores minimos y maximos del dataframe
+* Se realiza la verificación los valores mínimos y máximos del dataframe
 
 * Cantidad de películas por plataforma con un puntaje mayor a XX en determinado año (la función debe llamarse get_score_count(platform, scored, year))
 
@@ -110,7 +114,7 @@ Una vez encendido ingresados al link ya podemos utilizar nuestra consultas en la
 
 
 ```
-**video de presentacion**.
+**video de presentación**.
  (https://drive.google.com/file/d/1QDk4qe1-GVL1jOaTSR7OPoSB2ERB6usp/view?usp=share_link)
 
 **Gracias por su visita**.
