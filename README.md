@@ -78,7 +78,7 @@ Tambien se una API con el framework [Flask]([https://fastapi.tiangolo.com/](http
             
 La API, llamada  **mainFlask** permite conocer diferentes datos de las plataformas  Amazon, Hulu, Disney, Netflix, esta se trabajó en un archivo llamado **mainFlask.py** y pero no se le pudo hacer el deploying debido a que no se encontró información que sirviera de guía y que funcionaran sus pasos.
 
-Para ver el código completo donde están todas las funciones de esta API se pueden remitir a [main.py](https:///main.py).
+Para ver el código completo donde están todas las funciones de esta API se pueden remitir a [mainFlask.py](https://github.com/cristos34/PI-Flask-app-Plataforrmas/blob/01070124cf76e0849ccfaffbafd719161ddadd27/mainFlask.py).
 
 
 
