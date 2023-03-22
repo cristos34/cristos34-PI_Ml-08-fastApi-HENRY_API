@@ -62,7 +62,7 @@ Para la elboración de este proyecto se utilizaron las siguiente tecnologías:
 
 Se realiza un analisis exploratorio con el objetivo de verificar el estado los datos de entrada, para lograr detallar que están cargados correctamente, lo cual permite poder tomar decisiones en la limpieza de estos; los archivos orginales fueron suministrados en formato *csv*, estos se cargaron de la siguiente manera:
 
-Para visualizar la limpieza completa se pueden remitir a [Limpieza y extacion](https://github.com/cristos34/cristos34-PI_Ml-fastApi-HENRY_API/blob/37c7c0c8b08fd7c52ff687ea97fd46c417a0991f/Proyecto_PI_Uno.ipynb).
+Para visualizar la limpieza completa se pueden remitir a [Limpieza y extacion](https://github.com/cristos34/cristos34-PI_Ml-fastApi-HENRY_API/blob/cafca497c31cff8e8e1d2db426e657899d49f769/Proyecto_PI_ETL_Uno.ipynb).
 
 
 
