@@ -100,7 +100,7 @@ app=FastAPI(title="Api de consultas en Plataformas striming",
 
 **2.2** **Ejecutar la API**
 
-Para ejecutar la API se tienen que ingresar al siguiente link que se coneceta con el servidor (https://github.com/cristos34/cristos34-PI_Ml-fastApi-HENRY_API/blob/37c7c0c8b08fd7c52ff687ea97fd46c417a0991f/main.py)
+Para ejecutar la API se tienen que ingresar al siguiente link que se coneceta con el servidor (https://fastapi-platafomas-streaming.onrender.com/docs)
 
 
 ```
