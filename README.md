@@ -96,9 +96,52 @@ app=FastAPI(title="Api de consultas en Plataformas striming",
 ```
 **2.1** **Pasos realizar el deploying a la API con FastAPI**
 
+**2.2** **Pasos para crear el ambiente virtual**
+
+Crear el ambiente virtual desde la terminal con la siguiente línea de código nombre de la carpeta venvv, pero antes nos ubicamos en la carpeta raíz.
+#python -m venv venvv 
+Creamos un archivo principal, normalmente llamado Main.py o App.py
+# main.py 
+Nos dirijimos a la carpeta \venvv\ con el comando cd y tab
+#cd + tab
+    .\venvv\
+Copiamos la siguiente línea de código y la pegamos en la ruta de \venvv\
+Set-ExecutionPolicy -ExecutionPolicy Remotesigned -Scope process 
+Nos dirijimos a la carpeta \Scripts\ con el comando cd y tab
+#cd + tab
+Copiamos la siguiente línea de código y la pegamos en la ruta de \Scripts\
+\activate
+Nos dirijimos a la carpeta raíz, ósea que salimos de \venvv\ y \Scripts\  con el comando cd espacio 2 puntos cd ..
+#cd ..
+#cd ..
+Creamos un archivo llamado .gitignore, con el fin que ignorar el ambiente virtual cuando se suba al GitHub, dentro debe tener el nombre del ambiente virtual más el  /.
+Venvv/
+Creamos un archivo llamado requirements.txt, para especificar las librerías que vamos a usar con su versión, ingresando el siguiente comando y la podemos actualizar que el mismo comando
+pip frezze>requirements.txt
+Instado nuestro entorno virtual podemos continuar con nuestra Api
+Ejecutar el api creada en FastApi
+El siguiente comando es para correr nuestra Api
+#uvicorn main:app 
+El siguiente comando es para mantener corriendo nuestra Api, mientras esta en desarrollo
+#uvicorn main:app --reload 
+Rutas para colocar en el navegador después de ejecutar nuestra api de FastApi y poder observar el funcionamiento de la misma.
+#http://localhost:8000 
+#http://localhost:8000/docs
+#127.0.0.1:8000/docs
+#0.0.0.0:8000/docs
+e) cargamos el archivo a git hub
+git init
+git status
+git add . todos los archivos
+git add README.md
+git add nombre del archivo
+git commit -m "nombre de la carga del repositorio" ejemplo “first commit”
+git branch -M main
+git remote add origin https://ruta del repositorio donde se alojara el proyecto
+git push -u origin main
 
 
-**2.2** **Ejecutar la API**
+**2.3** **Ejecutar la API**
 
 Para ejecutar la API se tienen que ingresar al siguiente link que se coneceta con el servidor (https://fastapi-platafomas-streaming.onrender.com/docs)
 
