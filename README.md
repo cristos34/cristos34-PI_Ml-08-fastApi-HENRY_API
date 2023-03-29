@@ -65,8 +65,7 @@ Se realiza un analisis exploratorio con el objetivo de verificar el estado los d
 Para visualizar la limpieza completa se pueden remitir a [Limpieza y extacion](https://github.com/cristos34/cristos34-PI_Ml-fastApi-HENRY_API/blob/cafca497c31cff8e8e1d2db426e657899d49f769/Proyecto_PI_ETL_Uno.ipynb).
 
 
-
-**2.** **Creación de la API**
+## **2.** **Creación de la API**
 
 Para crear la API se utilizó el framework [FasAPI](https://fastapi.tiangolo.com/), que está catalogado en el momento como el frameworkde más alto procesamiento y de mayor facilidad de uso.
             
@@ -94,57 +93,83 @@ app=FastAPI(title="Api de consultas en Plataformas striming",
      * typing
      * uvicorn
 ```
-**2.1** **Pasos realizar el deploying a la API con FastAPI**
+## **2.1** **Pasos para crear el ambiente virtual**
 
-**2.2** **Pasos para crear el ambiente virtual**
+* Crear el ambiente virtual desde la terminal con la siguiente línea de código nombre de la carpeta venvv, pero antes nos ubicamos en la carpeta raíz.
+            
+            **python -m venv venvv** 
+           
+* Creamos un archivo principal, normalmente llamado Main.py o App.py
+           
+             ** main.py** 
+            
+* Nos dirijimos a la carpeta \venvv\ con el comando cd y tab
+            
+            **cd + tab**
+            **.\venvv\**
+            
+* Copiamos la siguiente línea de código y la pegamos en la ruta de \ven
+            
+            **Set-ExecutionPolicy -ExecutionPolicy Remotesigned -Scope process**
+            
+* Nos dirijimos a la carpeta \Scripts\ con el comando cd y tab
+            
+            **cd + tab**
+                        
+* Copiamos la siguiente línea de código y la pegamos en la ruta de \Scrip
+            
+            **\activate**
+            
+* Nos dirijimos a la carpeta raíz, ósea que salimos de \venvv\ y \Scripts\  con el comando cd espacio 2 puntos cd ..
+            
+            **cd ..**
+            **cd ..**
+            
+* Creamos un archivo llamado .gitignore, con el fin que ignorar el ambiente virtual cuando se suba al GitHub, dentro debe tener el nombre del ambiente virtual más el  /            
+           ``` Venvv/```
+            
+* Creamos un archivo llamado requirements.txt, para especificar las librerías que vamos a usar con su versión, ingresando el siguiente comando y la podemos actualizar que el mismo comando
+            
+           **pip frezze>requirements.txt**
+## <h2>**`Instado nuestro entorno virtual podemos continuar con nuestra Api`**</h2>         
+            
+## **2.2** **Ejecutar la api creada en FastApi localmente**
+* El siguiente comando es para correr nuestra Api
+              **uvicorn main:app**
+* El siguiente comando es para mantener corriendo nuestra Api, mientras esta en desarrollo
+              **uvicorn main:app --reload**
+* Rutas para colocar en el navegador después de ejecutar nuestra api de FastApi y poder observar el funcionamiento de la misma.
+             #http://localhost:8000 
+             #http://localhost:8000/docs
+             #127.0.0.1:8000/docs
+             #0.0.0.0:8000/docs
+    
+## **2.3** **Pasos para cargar el archivo a git hub**     
+     
+* git init
+* git status
+* git add . ``` todos los archivos ```
+* git add README.md  ```opcional```
+* git add nombre del archivo ```opcional```
+* git commit -m ``` "nombre de la carga del repositorio" ejemplo  “first commit”```
+* git branch -M main
+* git remote add origin ```https://ruta del repositorio donde se alojara el proyecto ```
+* git push -u origin main
 
-Crear el ambiente virtual desde la terminal con la siguiente línea de código nombre de la carpeta venvv, pero antes nos ubicamos en la carpeta raíz.
-#python -m venv venvv 
-Creamos un archivo principal, normalmente llamado Main.py o App.py
-# main.py 
-Nos dirijimos a la carpeta \venvv\ con el comando cd y tab
-#cd + tab
-    .\venvv\
-Copiamos la siguiente línea de código y la pegamos en la ruta de \venvv\
-Set-ExecutionPolicy -ExecutionPolicy Remotesigned -Scope process 
-Nos dirijimos a la carpeta \Scripts\ con el comando cd y tab
-#cd + tab
-Copiamos la siguiente línea de código y la pegamos en la ruta de \Scripts\
-\activate
-Nos dirijimos a la carpeta raíz, ósea que salimos de \venvv\ y \Scripts\  con el comando cd espacio 2 puntos cd ..
-#cd ..
-#cd ..
-Creamos un archivo llamado .gitignore, con el fin que ignorar el ambiente virtual cuando se suba al GitHub, dentro debe tener el nombre del ambiente virtual más el  /.
-Venvv/
-Creamos un archivo llamado requirements.txt, para especificar las librerías que vamos a usar con su versión, ingresando el siguiente comando y la podemos actualizar que el mismo comando
-pip frezze>requirements.txt
-Instado nuestro entorno virtual podemos continuar con nuestra Api
-Ejecutar el api creada en FastApi
-El siguiente comando es para correr nuestra Api
-#uvicorn main:app 
-El siguiente comando es para mantener corriendo nuestra Api, mientras esta en desarrollo
-#uvicorn main:app --reload 
-Rutas para colocar en el navegador después de ejecutar nuestra api de FastApi y poder observar el funcionamiento de la misma.
-#http://localhost:8000 
-#http://localhost:8000/docs
-#127.0.0.1:8000/docs
-#0.0.0.0:8000/docs
-e) cargamos el archivo a git hub
-git init
-git status
-git add . todos los archivos
-git add README.md
-git add nombre del archivo
-git commit -m "nombre de la carga del repositorio" ejemplo “first commit”
-git branch -M main
-git remote add origin https://ruta del repositorio donde se alojara el proyecto
-git push -u origin main
+## **2.4** **Pasos realizar el deploying a la API con FastAPI**
+            creamos el render
+            Creamos un usuario
+            Nos conectamos con el github y el repo que vamos a trabajar y creamos el render
+            Ponemos el nombre y uvicorn main:app --host 0.0.0.0 --port 10000
+            Luego en environment ponemos PIP_VERSION y 23.0.1
+            en logs seleccionamos manual deploy y elegimos la ultima opcion
+            esperamos que cargue(demora)
+            obtenemos la direccion https://proyecto-1-soy-henry.onrender.com
+            https://proyecto-1-soy-henry.onrender.com/docs
+ 
+## **2.5** **Paso a paso para ejecutar la API de forma remota con el deploy en Render**
 
-
-**2.3** **Ejecutar la API**
-
-Para ejecutar la API se tienen que ingresar al siguiente link que se coneceta con el servidor (https://fastapi-platafomas-streaming.onrender.com/docs)
-
+Paso a paso para ejecutar la API, se tiene que ingresar al siguiente link que se coneceta con el servidor (https://fastapi-platafomas-streaming.onrender.com/docs)
 
 ```
 Una vez encendido ingresados al link ya podemos utilizar nuestras consultas en la API, como son:
@@ -157,9 +182,8 @@ Una vez encendido ingresados al link ya podemos utilizar nuestras consultas en l
 
 * Cantidad de películas por plataforma con filtro de PLATAFORMA. (La función debe llamarse get_count_platform(platform))
 
-
-
 ```
+
 **video de presentación**.
  ([https://drive.google.com/file/d/1QDk4qe1-GVL1jOaTSR7OPoSB2ERB6usp/view?usp=share_link](https://drive.google.com/file/d/1vZMK-M0V41zpkx1y0-gEn2aKHFe0mqE3/view?usp=sharing))
 
