@@ -145,7 +145,9 @@ app=FastAPI(title="Api de consultas en Plataformas striming",
              #0.0.0.0:8000/docs
     
 ## **2.3** **Pasos para cargar el archivo a git hub**     
-     
+* Ir a la carpeta donde se encuentra el archivo 
+* Dar click derecho 
+* Escoger Git Bash Here
 * git init
 * git status
 * git add . ``` todos los archivos ```
