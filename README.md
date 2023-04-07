@@ -3,7 +3,7 @@
 # <h1 align=center> **PROYECTO INDIVIDUAL Nº1** </h1>
 
 # <h1 align=center>**`Data Engineering`**</h1>
-*Cristian Andres Contreas*
+*Cristian Andres Contreras*
 
 *Negociante internacional*
 
@@ -131,7 +131,7 @@ app=FastAPI(title="Api de consultas en Plataformas striming",
 * Creamos un archivo llamado requirements.txt, para especificar las librerías que vamos a usar con su versión, ingresando el siguiente comando y la podemos actualizar que el mismo comando
             
            **pip frezze>requirements.txt**
-## <h2>**`Instado nuestro entorno virtual podemos continuar con nuestra Api`**</h2>         
+## <h2>**`Instalado nuestro entorno virtual podemos continuar con nuestra Api`**</h2>         
             
 ## **2.2** **Ejecutar la api creada en FastApi localmente**
 * El siguiente comando es para correr nuestra Api
@@ -160,15 +160,28 @@ app=FastAPI(title="Api de consultas en Plataformas striming",
 * git push -u origin main
 
 ## **2.4** **Pasos realizar el deploying a la API con FastAPI**
-            creamos el render
-            Creamos un usuario
-            Nos conectamos con el github y el repo que vamos a trabajar y creamos el render
-            Ponemos el nombre y uvicorn main:app --host 0.0.0.0 --port 10000
-            Luego en environment ponemos PIP_VERSION y 23.0.1
-            en logs seleccionamos manual deploy y elegimos la ultima opcion
-            esperamos que cargue(demora)
-            obtenemos la direccion https://proyecto-1-soy-henry.onrender.com
-            https://proyecto-1-soy-henry.onrender.com/docs
+*  Ingresamos a Render.com
+*  Dar clic en **GET STARTED FOR FREE**
+*  Nos registramos en Render.com o entramos a través de **Github**
+*  Dar clic en **NEW+**
+*  Dar Clic en **Web service**
+*  Dar clic en **Connect**
+       -Colocar el nombre que deseemos
+*  Ir a **Stard Command**
+       colocar esta sentencia verificar el host y el port
+       **-uvicorn main:app --host 0.0.0.0 --port 10000**
+*  Dar clic en **Create Web Service**
+       **-Environment Variables**
+          **-Add Environment Variables**
+             **-Key: PIP_VERSION**
+             **-Value:22.3.1** -->Esta es la vercion del pip se debe consultar puede ser con **pip list**
+*  Dar clic en Save changes
+*  Ir **Logs**
+*  Dar clic en **Manual Deploy**
+      -Dar clic en **Deploy Latest Commit**
+*  Esperar un rato a que cargue (Demora un poquito)
+*  Copiamos la direccion **URL** y le agragamos **/docs**
+*  **Ejemplo https://fastapi-platafomas-streaming.onrender.com/docs**
  
 ## **2.5** **Paso a paso para ejecutar la API de forma remota con el deploy en Render**
 
