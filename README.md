@@ -143,8 +143,18 @@ app=FastAPI(title="Api de consultas en Plataformas striming",
              #http://localhost:8000/docs
              #127.0.0.1:8000/docs
              #0.0.0.0:8000/docs
+             
+## **2.3** **Pasos crear un repositorio en GitHub**     
+* Debe estar **Registrado en GitHub**
+* Entrar a su **Cuenta de GitHub**
+* Dar clic en **Repositories**
+* Dar clic en **NEW**
+* Colocar el **nombre al Repositorio** 
+* Dar una **breve Descripcion** del repo
+* Dar clic en **Create Repository**
+* Seguir los pasos del punto **2.4** del presente **README.md**
     
-## **2.3** **Pasos para cargar el archivo a git hub**     
+## **2.4** **Pasos para cargar el archivo a gitHub**     
 * Ir a la carpeta donde se encuentra el archivo 
 * Dar click derecho 
 * Escoger Git Bash Here - 
@@ -159,7 +169,7 @@ app=FastAPI(title="Api de consultas en Plataformas striming",
 * git remote add origin ```https://ruta del repositorio donde se alojara el proyecto ```
 * git push -u origin main
 
-## **2.4** **Pasos realizar el deploying a la API con FastAPI**
+## **2.5** **Pasos realizar el deploying a la API con FastAPI**
 *  Ingresamos a Render.com
 *  Dar clic en **GET STARTED FOR FREE**
 *  Nos registramos en Render.com o entramos a través de **Github**
@@ -183,7 +193,7 @@ app=FastAPI(title="Api de consultas en Plataformas striming",
 *  Copiamos la direccion **URL** y le agragamos **/docs**
 *  **Ejemplo https://fastapi-platafomas-streaming.onrender.com/docs**
  
-## **2.5** **Paso a paso para ejecutar la API de forma remota con el deploy en Render**
+## **2.6** **Paso a paso para ejecutar la API de forma remota con el deploy en Render**
 
 Paso a paso para ejecutar la API, se tiene que ingresar al siguiente link que se coneceta con el servidor (https://fastapi-platafomas-streaming.onrender.com/docs)
 
